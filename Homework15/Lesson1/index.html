@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="edit">
+            <button type="button" id="add-row" class="add" onclick="add_row('1')">Add</button>
+            <button type="button" id="delete-rows" class="delete" onclick="delete_rows('1')">Delete</button>
+        </div>
+        <table align ='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+        <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>gender</th>
+        <th>Action</th>
+        </tr>
+        
+        <tr id="row1">
+        <td id="id_row1">1</td>  
+        <td id="name_row1">Nguyễn Văn Nam</td>
+        <td id="gender_row1">Nam</td>
+        <td id="Action_row1"></td>
+        <td>
+        <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+        <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+        <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+        </td>
+        </tr>
+        
+        <tr id="row2">
+            <td id="id_row2">2</td>  
+            <td id="name_row2">Nguyễn Thị Nữ</td>
+            <td id="gender_row2">Nữ</td>
+            <td id="Action_row2"></td>
+            <td>
+            <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+            <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+            <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+            </td>
+            </tr>
+
+        <tr id="row3">
+            <td id="id_row3">3</td>  
+            <td id="name_row3">Nguyễn Ngịc Duy</td>
+            <td id="gender_row3">Nam</td>
+            <td id="Action_row3"></td>
+            <td>
+            <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+            <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+            <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+            </td>
+            </tr>
+            
+            <tr id="row4">
+                <td id="id_row4">6</td>  
+                <td id="name_row4">Nguyễn Ngọc Duy</td>
+                <td id="gender_row4">Nam</td>
+                <td id="Action_row4"></td>
+                <td>
+                <input type="button" id="edit_button4" value="Edit" class="edit" onclick="edit_row('4')">
+                <input type="button" id="save_button4" value="Save" class="save" onclick="save_row('4')">
+                <input type="button" value="Delete" class="delete" onclick="delete_row('4')">
+                </td>
+                </tr> 
+        
+        <tr>
+        <td><input type="text" id="new_id"></td>
+        <td><input type="text" id="new_name"></td>
+        <td><input type="text" id="new_gender"></td>
+        <td><input type="text" id="new_Action"></td>
+        <!-- <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td> -->
+        </tr>
+        
+        </table>
+        </div>
+        <script src="main.js"></script>
+</body>
+</html>

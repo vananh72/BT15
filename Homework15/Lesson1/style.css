@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#edit {
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px;
+}
+
+button.add {
+    margin: 0px 5px;
+}

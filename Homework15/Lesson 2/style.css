@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.display-block.display-block.display-block.display-block {
+    display: block;
+}
+
+.relative {
+    position: relative;
+}
+
+.container {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.container .container-list {
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.container .container-list .container-item {
+    list-style: none;
+    background-color: #2a394f;
+    border-left: 1px solid #4f5868;
+    border-right: 1px solid #4f5868;
+    transition: all 0.5s ease-in-out;
+}
+
+.container .container-list .container-item:first-child {
+    border-top: 1px solid #4f5868;
+}
+
+.container .container-list .container-item:not(:last-child) {
+    border-bottom: 1px solid #293547;
+}
+
+.container .container-list .container-item:hover {
+    background-color: #222e41;
+}
+
+.container .container-list .container-item:not(:last-child):hover {
+    border-bottom: 3px solid #355789;
+}
+
+.container .container-list .container-item .container-link {
+    display: block;
+    padding: 30px 29px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.container .container-list .container-item .container-link .container-icon {
+    margin-right: 15px;
+    font-size: 20px;
+    display: inline-block;
+    width: 25px;
+}
+
+.container .container-list .container-item  .container-text {
+    display: inline-block;
+    width: 190px;
+}
+
+.container .container-list .container-item .container-icon--reotate {
+    transform: rotate(90deg);
+    color: #14a2f7;
+    display: inline-block;
+}
+
+.container .container-item .container_dropdown-list {
+    border-radius: inherit;
+    transform: translateY(0);
+    display: none;
+    animation: shallow-down 0.3s ease-in-out;
+}
+
+.container .container-item .container_dropdown-list .container-item {
+    list-style: none;
+    border-left: 1px solid #3bb3fa;
+    border-right: 1px solid #3bb3fa;
+    background-color: #16a4f9;
+}
+
+.container .container-item .container_dropdown-list .container-item:not(:last-child) {
+    border-bottom: none;
+}
+
+.container .container-item .container_dropdown-list .container-item:hover {
+    background-color: #0c93e3;
+    border-left: 4px solid #146ca1;
+}
+
+.container .container-item .container_dropdown-list .container-item .container-link {
+    display: block;
+    padding: 30px 20px;
+    font-size: 18px;
+    color: #fff;
+}

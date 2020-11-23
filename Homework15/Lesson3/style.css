@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.display-block.display-block.display-block.display-block {
+    display: block;
+}
+
+.relative {
+    position: relative;
+}
+
+.timeline {
+    background-color: #446990;
+}
+
+.timeline_list {
+    width: 10px;
+    border: 1px solid #8da4bb;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.timeline_item {
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    background-color: #f35b6a;
+    margin: 150px 0;
+    margin-left: -11px;
+    border-radius: 50%;
+    border: 1px solid #ba5f76;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.timeline_item:hover {
+    background-color: #aa3c47;
+}
+
+.box_text {
+    width: 340px;
+    padding: 20px 15px;
+    background-color: #f35b6a;
+    border: 1px solid #7d6484;
+}
+
+.box_text:hover {
+    background-color: #ec5d6b;
+}
+
+.box_left,
+.box_right {
+    position: absolute;
+    bottom: 0;
+    transform: scale(1);
+    display: none;
+    animation: timeline-scale 0.4s ease-in-out;
+}
+
+.box_left {
+    right: 100%;
+    margin-right: 25px;
+    transform-origin: right 90%;
+}
+
+.box_right {
+    left: 100%;
+    margin-left: 25px;
+    transform-origin: left 90%;
+}
+
+.box_left::before,
+.box_right::before {
+    content: '';
+    position: absolute;
+    bottom: 4%;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+}
+
+.box_left::before {
+    left: 100%;
+    border-left: 10px solid #f35b6a;
+}
+
+.box_right::before {
+    right: 100%;
+    border-right: 10px solid #f35b6a;
+}
+
+.box_text-title {
+    color: #fff;
+}
+
+.box_text-subtitle {
+    color: #fee3e5;
+    margin-top: 10px;
+}
+
+@keyframes shallow-down {
+    0% {
+        transform: translateY(-20%);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    90% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes timeline-scale {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 0.5;
+        visibility: visited;
+        transform: scale(0.5)
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visited;
+        transform: scale(1)
+    }
+}
